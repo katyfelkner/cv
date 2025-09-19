@@ -36,7 +36,7 @@ jobs:
       - name: push to website
         uses: dmnemec/copy_file_to_another_repo_action@main
         env: 
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          API_TOKEN_GITHUB: ${{ secrets.GH_PAT }}
         with:
           source_file: 'github_artifacts/felknercv.pdf'
           destination_repo: 'katyfelkner/website'
