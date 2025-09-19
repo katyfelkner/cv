@@ -38,9 +38,8 @@ jobs:
         env: 
           API_TOKEN_GITHUB: ${{ secrets.GH_PAT }}
         with:
-          source_file: 'github_artifacts/felknercv.pdf/felknercv.pdf'
+          source_file: 'github_artifacts/felknercv.pdf'
           destination_repo: 'katyfelkner/website'
-          destination_folder: '.'
           destination_branch: 'master'
           user_email: 'felkner@usc.edu'
           user_name: 'katyfelkner'
