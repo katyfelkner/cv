@@ -1,0 +1,370 @@
+%-------------------------
+% Katy Felkner's CV
+% adapted from template by Sourabh Bajaj
+% https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\setlength{\footskip}{4.08003pt}
+
+% formatting for links
+\usepackage[pdftex]{hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+
+% manage publication list
+\usepackage[style=authoryear, sorting=ydnt, minnames=2, dashed=false ]{biblatex}
+\AtBeginBibliography{\small}
+
+\renewcommand*{\mkbibcompletename}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}  
+}
+
+% text encoding stuff to make this ATS-parseable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItemWithHeader}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+  {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt} \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingSecondTitle}[2]{
+  \vspace{-3pt} \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% tentatively keeping this in a tabular to make it more identical to other headings
+\newcommand{\resumeSubheadingNoTitle}[1]{
+  \vspace{-1pt} \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}, leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\textbf{\LARGE Katy Felkner}
+
+\href{mailto:felkner@isi.edu}{\texttt{felkner@isi.edu}}~\textbar~ \href{http://katyfelkner.com/}{\texttt{http://www.katyfelkner.com}}~\textbar~(405)-808-2703
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Ph.D. in Computer Science}{Aug. 2020 -- Present}
+      \resumeItemListStart
+        \resumeItem{Expected Spring 2027; GPA: 3.88/4.00; Supported by \textbf{NSF Graduate Research Fellowship}}
+      \resumeItem{Coursework: Advanced Natural Language Processing, Fairness in AI, Probability and Statistics for Data Science, Representation Learning in NLP, Advanced Algorithms, Crafting a Research Agenda in Computer Science}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of Oklahoma}{Norman, OK}
+      {B.S. in Computer Science \textit{(summa cum laude)}, B.A. in Letters \textit{(summa cum laude)}}{Aug. 2016 -- May 2020}
+      \resumeItemListStart
+        \resumeItem{Minor: Mathematics; GPA: 4.00/4.00} 
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Research Interests}
+\small{My research focuses on developing high-quality, \textbf{well-grounded benchmark datasets} for robust evaluation of language models, with particular emphases on participatory, community-engaged methods and on rigorous measurement of fairness and social bias.}
+
+\section{Publications}
+\begin{refsection}[my_pubs_formatted.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \resumeItemWithHeader{Programming Languages and Skills}{Python, C, C++, R, SQL, Bash Scripting, HPC, Slurm}
+   \resumeItemWithHeader{ML/NLP/Data Science Tools}{HuggingFace, PyTorch, TensorFlow, SpaCy, Pandas, Numpy, Scikit-Learn, NLTK}
+ \resumeSubHeadingListEnd
+
+\section{Research Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {LLM Fairness and Bias, USC Information Sciences Institute}{Los Angeles, CA}
+      {Graduate Research Assistant}{Jan. 2022 -- Present}
+      \resumeItemListStart
+      \resumeItem{Developed two community-sourced benchmark datasets for detecting anti-LGBTQ+ and antisemitic bias in LLMs.}
+      \resumeItem{Designed and distributed two community surveys and analyzed 500 responses to inform LLM bias benchmarks.}
+      \resumeItem{Led team of 3 to collect 8M sentences of community data, then train 32 debiased models via continued pretraining.}
+      \resumeItem{Assessed LLM capability to assist in data annotation for fairness benchmark construction and conducted detailed human analysis of model failures.}
+      \resumeItem{Analyzed behavior of textual entailment (natural language inference, NLI) as an LLM bias metric, including developing a novel NLI bias dataset and detailed study of differences in behavior between token probability and NLI bias metrics.}
+      \resumeItemWithHeader{Publications}{Led interdisciplinary teams of coauthors to write and publish two papers in ACL (2023, 2024).}
+      \resumeItemWithHeader{Mentoring}{Currently mentoring undergraduate student on NLI bias metric project.}
+      \resumeItemWithHeader{Advisor/PI}{Jonathan May}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DARPA ReMATH, USC Information Sciences Institute}{Los Angeles, CA}
+      {Graduate Research Assistant}{Jan. 2021 -- Jun. 2022}
+      \resumeItemListStart
+      \resumeItem{Trained neural machine translation (NMT) models for extraction of symbolic math from assembly code and bit-vector expressions.}
+      \resumeItem{Developed novel metrics for evaluation of NMT-generated mathematical expressions.}
+      \resumeItemWithHeader{Publication}{Wrote relevant sections of workshop paper accepted to CheckMATE, ACM CCS 2021.}
+      \resumeItemWithHeader{PI}{Luis Garcia}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Border Translation Project, USC Information Sciences Institute}{Los Angeles, CA}
+      {Graduate Research Assistant}{Aug. 2020 -- Dec. 2021}
+      \resumeItemListStart
+      \resumeItem{Built and evaluated NMT systems for extremely low-resource languages.}
+      \resumeItem{Developed baseline NMT system for K'iche', a Mayan indigenous language, with intended application of helping NGOs provide legal assistance to immigrants and asylum seekers.}
+      \resumeItemWithHeader{Advisor/PI}{Jonathan May}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Ultrascale Systems Research Center, Los Alamos National Laboratory}{Remote}
+      {Post-Baccalaureate Research Intern}{May 2020 -- Aug. 2020}
+      \resumeItemListStart
+      \resumeItem{Collected 750,000 lines of non-secret syslog data using a 20-node virtual compute cluster.}
+      \resumeItem{Tested several word embedding and clustering algorithms to extract natural language features from supercomputer syslog.}
+      \resumeItem{Showed that these natural language features can be used to improve HPC node failure detection and prediction.}
+      \resumeItemWithHeader{Publication}{Wrote workshop paper accepted to Second Workshop on Machine Learning for Computing Systems, Supercomputing 2020.}
+      \resumeItemWithHeader{Mentor}{Elisabeth (Lissa) Moore}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital Latin Library, University of Oklahoma}{Norman, OK}
+      {Undergraduate Research Assistant}{Jan. 2017 -- May 2020}
+      \resumeItemListStart
+      \resumeItem{Wrote Python scripts to parse HTML documents containing Latin texts, generating 125000 lines of SQL output.}
+      \resumeItem{Designed scripts to automate XML encoding of Latin prose and poetry, reducing time to encode by a factor of 400.}
+      \resumeItem{Only undergraduate student accepted to National Endowment for the Humanities Institute on Advanced Topics in Digital Humanities for Summer 2018 at Tufts University.}
+      \resumeItemWithHeader{Presentations}{Conference talks at Society for Classical Studies 2019, Classical Association of the Middle West and South 2018, National Conference on Undergraduate Research 2018}
+      \resumeItemWithHeader{Mentor}{Samuel Huskey}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Teaching Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {CSCI 662 Advanced Natural Language Processing, University of Southern California}{Los Angeles, CA}
+      {Teaching Assistant}{Fall 2025}
+      \resumeItemListStart
+      \resumeItem{Substantially update all homework assignments to better cover finetuning, attention, transformers, and RLHF.}
+      \resumeItem{Migrate automated grading for all programming assignments from Vocareum to Gradescope.}
+      \resumeItem{Configure all GradeScope assignments and rubrics.}
+      \resumeItem{Grade assignments, including programming homework, written reports, and in-class presentations.}
+      \resumeItem{Manage course logistics for about 30 students, including webpage, Slack channel, and Brightspace LMS.}
+      \resumeItem{Host weekly office hours and answer student questions on Slack.}
+      \resumeItemWithHeader{Professor}{Jonathan May}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {CSCI 350 Introduction to Operating Systems, University of Southern California}{Los Angeles, CA}
+      {Teaching Assistant}{Summer 2025}
+      \resumeItemListStart
+      \resumeItem{Graded C programming assignments in XV6 teaching operating system.}
+      \resumeItem{Hosted weekly office hours and answer student questions on Piazza.}
+      \resumeItemWithHeader{Professor}{Bill Cheng}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Epic Systems Corporation}{Madison, WI}
+      {Software Developer Intern}{May 2019 -- Aug. 2019}
+      \resumeItemListStart
+      \resumeItem{Prototyped a menstrual cycle tracking feature within MyChart for iOS to allow patients to share cycle data with providers.}
+      \resumeItem{Designed and implemented server and client-side data structures to save cycle data to the patient's medical record.}
+      \resumeItem{Built four complete and interactive user-interface screens and partial prototypes of several others.}
+      \resumeItem{Conducted user research, including about 100 internal survey responses and 5 user interviews.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Presentations}
+\resumeSubHeadingListStart
+ \resumeSubheadingNoTitle{Invited Talks}
+      \resumeItemListStart
+      \resumeItem{Celebrate Track Invited Speaker, \textit{Community-Sourced Bias Metrics for LLMs}, UCLA QWERHacks. \hfill \textit{Feb. 2025}}
+      \resumeItem{Guest Lecturer on \textit{Ethics and Power in NLP}, USC CSCI 662 Advanced NLP \hfill \textit{Fall 2023, 2024, 2025}}
+      \resumeItem{Invited Panelist on \textit{Language Matters: Addressing Bias in LLMs}, IAPP Privacy. Security. Risk. \hfill \textit{Sep. 2024}}
+      \resumeItem{Invited Speaker, John Brooks Slaughter Leadership in Engineering DEI Summit. \hfill \textit{Feb. 2024}}
+      \resumeItem{Invited Panelist on \textit{Bias in Generative AI}, QueerInAI Workshop at NeurIPS. \hfill \textit{Dec. 2023}}
+    \resumeItem{Invited Speaker, \textit{Anti-Queer Bias in LLMs}, USC ISI Natural Language Seminar. \hfill \textit{Jun. 2022}}
+    \resumeItem{Guest Lecturer, \textit{Servius: An Object-Oriented Approach}, Sunoikisis Digital Classics \hfill \textit{May 2019}}
+      \resumeItemListEnd
+    \resumeSubheadingNoTitle{Conference Talks and Posters}
+      \resumeItemListStart
+      \resumeItem{Lightning Talk, \textit{Participatory Methods for LLM Bias Benchmarks}, Responsible Data Workshop. \hfill \textit{Sep. 2025}}
+      \resumeItem{Poster Presentation, \textit{Textual Entailment as a Bias Evaluation Metric for LLMs}, USC ShowCAIS. \hfill \textit{Apr. 2025}}
+      \resumeItem{Poster Presentation, \textit{GPT is Not an Annotator}, Southern California NLP Symposium. \hfill \textit{Nov. 2024}}
+      \resumeItem{Roundtable Discussion, \textit{Defining and Disrupting Antisemitism}, Association for Jewish Studies. \hfill \textit{Dec. 2023}}
+      \resumeItem{Poster Presentation, \textit{Anti-Queer Bias in LLMs}, CRA-WP Grad Cohort for Women. \hfill \textit{Apr. 2023}}
+      \resumeItem{Poster Presentation, \textit{Anti-Queer Bias in LLMs}, Southern California NLP Symposium. \hfill \textit{Nov. 2022}}
+      \resumeItem{\textit{Automatically Encoding Digital Editions of Latin Texts}, Society for Classical Studies. \hfill \textit{Jan. 2019}}
+      \resumeItem{\textit{Coding And/As Classical Scholarship}, Classical Association of the Midwest and South. \hfill \textit{Apr. 2018}}
+      \resumeItem{\textit{Coding And/As Classical Scholarship}, National Conference on Undergraduate Research. \hfill \textit{Apr. 2018}}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+% TODO Professional Service
+\section{Professional Service}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {USC ISI Natural Language Seminar}{Los Angeles, CA}
+      {Coordinator}{Aug. 2024 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Recruited external speakers and coordinated publicity for 15 talks, average 20 attendees each.}
+        \resumeItemListEnd
+    \resumeSubheadingNoTitle{Conference and Workshop Reviewing}
+      \resumeItemListStart
+        \resumeItemWithHeader{Conferences}{EMNLP 2023, ACL 2023, EMNLP 2022 Theme Track}
+        \resumeItemWithHeader{Workshops}{NAACL Student Research Workshop 2025}
+        \resumeItemWithHeader{Ethics Reviewing}{EMNLP 2025}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Leadership and Outreach}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {USC Center for AI in Society} {Los Angeles, CA} {Student Leader} {Aug. 2025 -- Present}
+    \resumeItemListStart
+    \resumeItem{Assist with publicizing seminars, mentoring CAIS++ undergraduates, and organizing ShowCAIS Symposium.}
+    \resumeItemListEnd
+    \resumeSubheading {Queers in Engineering, Science, and Technology (QuEST)} {Los Angeles, CA} {Graduate Representative} {Sep. 2020 -- Present}
+    \resumeItemListStart
+    \resumeItem{Recruit graduate students to QuEST and advocate for their needs in the organization.}
+    \resumeItem{Organize general meetings on graduate school/fellowship applications and mentor undergraduate applicants.}
+    \resumeItem{2022 oSTEM Region F Conference Organizer: Presented graduate application workshop, spoke on Queer in Academia panel, organized and hosted charity livestream, raising \$950 for LGBTQ+ community organizations in LA}
+    \resumeItemListEnd
+    
+    \resumeSubheading {Alpha Sigma Kappa -- - Women in Technical Studies} {Norman, OK} {President}{Apr. 2019 -- Apr. 2020}
+    \resumeItemListStart
+    \resumeItem{Oversaw 6 executive board members and served as chief risk management officer.}
+    \resumeItem{Led chapter’s transition to virtual operations due to COVID-19, rapidly establishing new programs to maintain sisterhood and encourage academic excellence during the pandemic.}
+    \resumeItemListEnd
+    \resumeSubheadingSecondTitle{Vice President}{Dec. 2017 -- Dec. 2018}
+    \resumeItemListStart
+    \resumeItem{Planned and executed nine recruitment events per semester, recruiting 32 new members.}
+    \resumeItem{Mentored 9 officers on 5 committees, resulting in successful chapter social and new member education programs.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Out in Science, Technology, Engineering, and Math} {Norman, OK}
+    {Secretary} {Mar. 2017 -- Dec. 2019}
+    \resumeItemListStart
+    \resumeItem{Served on founding executive board of first oSTEM chapter in the state of Oklahoma.}
+    \resumeItem{Planned and executed about two medium-scale events per month and managed event promotion and member communication.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Halliburton Women's Welcome} {Norman, OK}
+    {Program Committee Chair} {Aug. 2018, Aug. 2019}
+    \resumeItemListStart
+    \resumeItem{Served on founding executive board of first oSTEM chapter in the state of Oklahoma.}
+    \resumeItem{Planned and executed a week-long program for 80+ incoming female students in engineering.}
+    \resumeItem{Organized campus resource fair and inclusive professional dress workshop that received 91\% positive participant feedback.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Honors and Awards}
+ \resumeSubHeadingListStart
+ \resumeSubheadingNoTitle{University of Southern California}
+ \resumeItemListStart
+   \resumeItem{National Science Foundation Graduate Research Fellowship: 3 year selective national fellowship}
+   \resumeItem{Viterbi Graduate School Fellowship: 1 year USC internal fellowship}
+\resumeItemListEnd
+\resumeSubheadingNoTitle{University of Oklahoma}
+\resumeItemListStart
+   \resumeItem{Gallogly College of Engineering Outstanding Senior}
+   \resumeItem{Outstanding Senior in Computer Science}
+   \resumeItem{Letzeiser Honor List – Silver Medalist: second place among top 30 seniors at University of Oklahoma}
+   \resumeItem{Outstanding Greek Senior: awarded to about 5 seniors per year for fraternity/sorority leadership}
+   \resumeItem{Ronald Lehr Phi Beta Kappa Undergraduate Research Award: best presentation at OU Undergrad Research Day}
+   \resumeItem{Alpha Sigma Kappa National Outstanding Leader}
+   \resumeItem{OU Campus Life Award: 40 outstanding upperclassmen based on campus leadership}
+   \resumeItem{Regents' Award for Outstanding Juniors: 12 most outstanding juniors, based on academics and campus leadership}
+   \resumeItem{President’s Award for Outstanding Sophomores: 12 most sophomores, based on academics and campus involvement}
+   \resumeItem{Rita H. Lottinville Prize: five outstanding sophomores, based on academic and extracurricular achievement}
+   \resumeItem{University College PACE Award: up to 1\% of freshman class based on leadership and community involvement}
+   \resumeItem{Myrna L. Carney Award – given to three students from among PACE award winners}
+   \resumeItem{Douglas and Hilda Bourne Engineering Scholarship: merit scholarship for one outstanding woman in engineering}
+   \resumeItem{Gallogly College of Engineering Diversity and Inclusion Scholar}
+   \resumeItem{OU Women in Engineering Impact in Engineering Award: peer-voted award for outstanding technical project}
+   \resumeItem{OU Women in Engineering Outstanding Sophomore: peer-voted award}
+   \resumeItem{Mary Enod Williams Classics and Letters Scholarship: merit scholarship for one outstanding classics student}
+   \resumeItem{CAMWS Award for Outstanding Accomplishment in Classical Studies}
+   \resumeItem{Phi Beta Kappa: national arts and sciences honor society}
+   \resumeItem{Tau Beta Pi: national engineering honor society}
+   \resumeItem{Eta Sigma Phi: national classics honor society}
+   \resumeItem{Phi Kappa Phi: national academic honor society}
+\resumeItemListEnd
+ \resumeSubHeadingListEnd
+\end{document}
