@@ -41,6 +41,7 @@ jobs:
           source_file: 'github_artifacts/felknercv.pdf'
           destination_repo: 'katyfelkner/website'
           destination_branch: 'master'
+          destination_folder: '' 
           user_email: 'felkner@usc.edu'
           user_name: 'katyfelkner'
           commit_message: 'auto-updated CV'
