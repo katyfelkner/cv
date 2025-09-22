@@ -78,7 +78,7 @@
   \vspace{-1pt} \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \small #4 \\
       
     \end{tabular*}\vspace{-5pt}
 }
@@ -86,7 +86,7 @@
 \newcommand{\resumeSubheadingSecondTitle}[2]{
   \vspace{-3pt} \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1} & \small #2 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -116,7 +116,7 @@
 %----------HEADING-----------------
 \textbf{\LARGE Katy Felkner}
 
-\href{mailto:felkner@isi.edu}{\texttt{felkner@isi.edu}}~\textbar~ \href{http://katyfelkner.com/}{\texttt{http://www.katyfelkner.com}}~\textbar~(405)-808-2703
+\href{mailto:felkner@isi.edu}{\texttt{felkner@isi.edu}}~\textbar~ \href{http://katyfelkner.com/}{\texttt{http://www.katyfelkner.com}}~\textbar~(405) 808-2703
 
 
 \section{Education}
@@ -138,7 +138,7 @@
   \resumeSubHeadingListEnd
 
 \section{Research Interests}
-\small{My research focuses on developing high-quality, \textbf{well-grounded benchmark datasets} for robust evaluation of language models, with particular emphases on participatory, community-engaged methods and on rigorous measurement of fairness and social bias.}
+\small{Research agenda focuses on developing high-quality, \textbf{well-grounded benchmark datasets} for robust evaluation of language models, with particular emphases on participatory, community-engaged methods and on rigorous measurement of fairness and social bias.}
 
 \section{Publications}
 \begin{refsection}[my_pubs_formatted.bib]
@@ -158,13 +158,13 @@
       {LLM Fairness and Bias, USC Information Sciences Institute}{Los Angeles, CA}
       {Graduate Research Assistant}{Jan. 2022 -- Present}
       \resumeItemListStart
-      \resumeItem{Developed two community-sourced benchmark datasets for detecting anti-LGBTQ+ and antisemitic bias in LLMs.}
-      \resumeItem{Designed and distributed two community surveys and analyzed 500 responses to inform LLM bias benchmarks.}
-      \resumeItem{Led team of 3 to collect 8M sentences of community data, then train 32 debiased models via continued pretraining.}
-      \resumeItem{Assessed LLM capability to assist in data annotation for fairness benchmark construction and conducted detailed human analysis of model failures.}
-      \resumeItem{Analyzed behavior of textual entailment (natural language inference, NLI) as an LLM bias metric, including developing a novel NLI bias dataset and detailed study of differences in behavior between token probability and NLI bias metrics.}
-      \resumeItemWithHeader{Publications}{Led interdisciplinary teams of coauthors to write and publish two papers in ACL (2023, 2024).}
-      \resumeItemWithHeader{Mentoring}{Currently mentoring undergraduate student on NLI bias metric project.}
+      \resumeItem{Develop two community-sourced benchmark datasets for detecting anti-LGBTQ+ and antisemitic bias in LLMs.}
+      \resumeItem{Design and distribute two community surveys and analyze 500 responses to inform LLM bias benchmarks.}
+      \resumeItem{Lead team of 3 to collect 8M sentences of community data, then train 32 debiased models via continued pretraining.}
+      \resumeItem{Assess LLM capability to assist in data annotation for fairness benchmark construction and conduct detailed human analysis of model failures.}
+      \resumeItem{Analyze behavior of textual entailment (natural language inference, NLI) as an LLM bias metric, including developing a novel NLI bias dataset and detailed study of differences in behavior between token probability and NLI bias metrics.}
+      \resumeItemWithHeader{Publications}{Lead interdisciplinary teams of coauthors to publish two papers in ACL (2023, 2024).}
+      \resumeItemWithHeader{Mentoring}{Mentor undergraduate student on NLI bias metric project.}
       \resumeItemWithHeader{Advisor/PI}{Jonathan May}
       \resumeItemListEnd
 
@@ -193,8 +193,8 @@
       \resumeItemListStart
       \resumeItem{Collected 750,000 lines of non-secret syslog data using a 20-node virtual compute cluster.}
       \resumeItem{Tested several word embedding and clustering algorithms to extract natural language features from supercomputer syslog.}
-      \resumeItem{Showed that these natural language features can be used to improve HPC node failure detection and prediction.}
-      \resumeItemWithHeader{Publication}{Wrote workshop paper accepted to Second Workshop on Machine Learning for Computing Systems, Supercomputing 2020.}
+      \resumeItem{Found these natural language features can be used to improve HPC node failure detection and prediction.}
+      \resumeItemWithHeader{Publication}{Authored workshop paper accepted to Second Workshop on Machine Learning for Computing Systems, Supercomputing 2020.}
       \resumeItemWithHeader{Mentor}{Elisabeth (Lissa) Moore}
       \resumeItemListEnd
 
@@ -214,12 +214,12 @@
 \resumeSubHeadingListStart
     \resumeSubheading
       {CSCI 662 Advanced Natural Language Processing, University of Southern California}{Los Angeles, CA}
-      {Teaching Assistant}{Fall 2025}
+      {Teaching Assistant}{Aug. 2025 -- Dec. 2025}
       \resumeItemListStart
       \resumeItem{Substantially update all homework assignments to better cover finetuning, attention, transformers, and RLHF.}
       \resumeItem{Migrate automated grading for all programming assignments from Vocareum to Gradescope.}
       \resumeItem{Configure all GradeScope assignments and rubrics.}
-      \resumeItem{Grade assignments, including programming homework, written reports, and in-class presentations.}
+      \resumeItem{Grade assignments, including programming homework, research reports, and in-class presentations.}
       \resumeItem{Manage course logistics for about 30 students, including webpage, Slack channel, and Brightspace LMS.}
       \resumeItem{Host weekly office hours and answer student questions on Slack.}
       \resumeItemWithHeader{Professor}{Jonathan May}
@@ -227,7 +227,7 @@
 
       \resumeSubheading
       {CSCI 350 Introduction to Operating Systems, University of Southern California}{Los Angeles, CA}
-      {Teaching Assistant}{Summer 2025}
+      {Teaching Assistant}{May 2025 -- Aug. 2025}
       \resumeItemListStart
       \resumeItem{Graded C programming assignments in XV6 teaching operating system.}
       \resumeItem{Hosted weekly office hours and answer student questions on Piazza.}
@@ -244,7 +244,7 @@
       {Software Developer Intern}{May 2019 -- Aug. 2019}
       \resumeItemListStart
       \resumeItem{Prototyped a menstrual cycle tracking feature within MyChart for iOS to allow patients to share cycle data with providers.}
-      \resumeItem{Designed and implemented server and client-side data structures to save cycle data to the patient's medical record.}
+      \resumeItem{Designed and implemented server and client-side data structures to save cycle data to patient's medical record.}
       \resumeItem{Built four complete and interactive user-interface screens and partial prototypes of several others.}
       \resumeItem{Conducted user research, including about 100 internal survey responses and 5 user interviews.}
       \resumeItemListEnd
@@ -298,13 +298,13 @@
     \resumeSubheading
     {USC Center for AI in Society} {Los Angeles, CA} {Student Leader} {Aug. 2025 -- Present}
     \resumeItemListStart
-    \resumeItem{Assist with publicizing seminars, mentoring CAIS++ undergraduates, and organizing ShowCAIS Symposium.}
+    \resumeItem{Assist with publicizing seminars, mentoring CAIS++ undergraduates, and planning ShowCAIS Symposium.}
     \resumeItemListEnd
     \resumeSubheading {Queers in Engineering, Science, and Technology (QuEST)} {Los Angeles, CA} {Graduate Representative} {Sep. 2020 -- Present}
     \resumeItemListStart
-    \resumeItem{Recruit graduate students to QuEST and advocate for their needs in the organization.}
-    \resumeItem{Organize general meetings on graduate school/fellowship applications and mentor undergraduate applicants.}
-    \resumeItem{2022 oSTEM Region F Conference Organizer: Presented graduate application workshop, spoke on Queer in Academia panel, organized and hosted charity livestream, raising \$950 for LGBTQ+ community organizations in LA}
+    \resumeItem{Recruit graduate students to QuEST and advocate for graduate student needs in the organization.}
+    \resumeItem{Conduct general meetings on graduate school/fellowship applications and mentor undergraduate applicants.}
+    \resumeItem{2022 oSTEM Region F Conference Organizer: Present graduate application workshop; speak on Queer in Academia panel; organize and hoste charity livestream, raising \$950 for LGBTQ+ community organizations in LA}
     \resumeItemListEnd
     
     \resumeSubheading {Alpha Sigma Kappa -- - Women in Technical Studies} {Norman, OK} {President}{Apr. 2019 -- Apr. 2020}
@@ -315,7 +315,7 @@
     \resumeSubheadingSecondTitle{Vice President}{Dec. 2017 -- Dec. 2018}
     \resumeItemListStart
     \resumeItem{Planned and executed nine recruitment events per semester, recruiting 32 new members.}
-    \resumeItem{Mentored 9 officers on 5 committees, resulting in successful chapter social and new member education programs.}
+    \resumeItem{Mentored 9 officers on 5 committees, resulting in effective chapter social and new member education programs.}
     \resumeItemListEnd
     \resumeSubheading
     {Out in Science, Technology, Engineering, and Math} {Norman, OK}
@@ -329,41 +329,42 @@
     {Program Committee Chair} {Aug. 2018, Aug. 2019}
     \resumeItemListStart
     \resumeItem{Planned and executed a week-long program for 80+ incoming female students in engineering.}
-    \resumeItem{Organized campus resource fair and inclusive professional dress workshop that received 91\% positive participant feedback.}
+    \resumeItem{Organized campus resource fair and inclusive professional dress workshop which received 91\% positive participant feedback.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\section{Honors and Awards}
- \resumeSubHeadingListStart
- \resumeSubheadingNoTitle{University of Southern California}
- \resumeItemListStart
-   \resumeItem{National Science Foundation Graduate Research Fellowship: 3 year selective national fellowship}
-   \resumeItem{Viterbi Graduate School Fellowship: 1 year USC internal fellowship}
-\resumeItemListEnd
-\resumeSubheadingNoTitle{University of Oklahoma}
-\resumeItemListStart
-   \resumeItem{Gallogly College of Engineering Outstanding Senior}
-   \resumeItem{Outstanding Senior in Computer Science}
-   \resumeItem{Letzeiser Honor List – Silver Medalist: second place among top 30 seniors at University of Oklahoma}
-   \resumeItem{Outstanding Greek Senior: awarded to about 5 seniors per year for fraternity/sorority leadership}
-   \resumeItem{Ronald Lehr Phi Beta Kappa Undergraduate Research Award: best presentation at OU Undergrad Research Day}
-   \resumeItem{Alpha Sigma Kappa National Outstanding Leader}
-   \resumeItem{OU Campus Life Award: 40 outstanding upperclassmen based on campus leadership}
-   \resumeItem{Regents' Award for Outstanding Juniors: 12 most outstanding juniors, based on academics and campus leadership}
-   \resumeItem{President’s Award for Outstanding Sophomores: 12 most sophomores, based on academics and campus involvement}
-   \resumeItem{Rita H. Lottinville Prize: five outstanding sophomores, based on academic and extracurricular achievement}
-   \resumeItem{University College PACE Award: up to 1\% of freshman class based on leadership and community involvement}
-   \resumeItem{Myrna L. Carney Award – given to three students from among PACE award winners}
-   \resumeItem{Douglas and Hilda Bourne Engineering Scholarship: merit scholarship for one outstanding woman in engineering}
-   \resumeItem{Gallogly College of Engineering Diversity and Inclusion Scholar}
-   \resumeItem{OU Women in Engineering Impact in Engineering Award: peer-voted award for outstanding technical project}
-   \resumeItem{OU Women in Engineering Outstanding Sophomore: peer-voted award}
-   \resumeItem{Mary Enod Williams Classics and Letters Scholarship: merit scholarship for one outstanding classics student}
-   \resumeItem{CAMWS Award for Outstanding Accomplishment in Classical Studies}
-   \resumeItem{Phi Beta Kappa: national arts and sciences honor society}
-   \resumeItem{Tau Beta Pi: national engineering honor society}
-   \resumeItem{Eta Sigma Phi: national classics honor society}
-   \resumeItem{Phi Kappa Phi: national academic honor society}
-\resumeItemListEnd
- \resumeSubHeadingListEnd
+
+% \section{Honors and Awards}
+%  \resumeSubHeadingListStart
+%  \resumeSubheadingNoTitle{University of Southern California}
+%  \resumeItemListStart
+%    \resumeItem{National Science Foundation Graduate Research Fellowship: 3 year selective national fellowship}
+%    \resumeItem{Viterbi Graduate School Fellowship: 1 year USC internal fellowship}
+% \resumeItemListEnd
+% \resumeSubheadingNoTitle{University of Oklahoma}
+% \resumeItemListStart
+%    \resumeItem{Gallogly College of Engineering Outstanding Senior}
+%    \resumeItem{Outstanding Senior in Computer Science}
+%    \resumeItem{Letzeiser Honor List – Silver Medalist: second place among top 30 seniors at University of Oklahoma}
+%    \resumeItem{Outstanding Greek Senior: awarded to about 5 seniors per year for fraternity/sorority leadership}
+%    \resumeItem{Ronald Lehr Phi Beta Kappa Undergraduate Research Award: best presentation at OU Undergrad Research Day}
+%    \resumeItem{Alpha Sigma Kappa National Outstanding Leader}
+%    \resumeItem{OU Campus Life Award: 40 outstanding upperclassmen based on campus leadership}
+%    \resumeItem{Regents' Award for Outstanding Juniors: 12 most outstanding juniors, based on academics and campus leadership}
+%    \resumeItem{President’s Award for Outstanding Sophomores: 12 most sophomores, based on academics and campus involvement}
+%    \resumeItem{Rita H. Lottinville Prize: five outstanding sophomores, based on academic and extracurricular achievement}
+%    \resumeItem{University College PACE Award: up to 1\% of freshman class based on leadership and community involvement}
+%    \resumeItem{Myrna L. Carney Award – given to three students from among PACE award winners}
+%    \resumeItem{Douglas and Hilda Bourne Engineering Scholarship: merit scholarship for one outstanding woman in engineering}
+%    \resumeItem{Gallogly College of Engineering Diversity and Inclusion Scholar}
+%    \resumeItem{OU Women in Engineering Impact in Engineering Award: peer-voted award for outstanding technical project}
+%    \resumeItem{OU Women in Engineering Outstanding Sophomore: peer-voted award}
+%    \resumeItem{Mary Enod Williams Classics and Letters Scholarship: merit scholarship for one outstanding classics student}
+%    \resumeItem{CAMWS Award for Outstanding Accomplishment in Classical Studies}
+%    \resumeItem{Phi Beta Kappa: national arts and sciences honor society}
+%    \resumeItem{Tau Beta Pi: national engineering honor society}
+%    \resumeItem{Eta Sigma Phi: national classics honor society}
+%    \resumeItem{Phi Kappa Phi: national academic honor society}
+% \resumeItemListEnd
+%  \resumeSubHeadingListEnd
 \end{document}
