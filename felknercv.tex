@@ -70,7 +70,7 @@
 % Custom commands
 \newcommand{\resumeItemWithHeader}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1:}{ #2 \vspace{-2pt}}
   }
 }
 
@@ -124,27 +124,10 @@
 
 \href{mailto:felkner@isi.edu}{\texttt{felkner@isi.edu}}~\textbar~ \href{http://katyfelkner.com/}{\texttt{http://www.katyfelkner.com}}~\textbar~(405) 808-2703
 
+\section{Research Summary}
+\small{Final year Ph.D. candidate graduating April 2027 and seeking \textbf{full-time roles beginning June 2027.} Research agenda focuses on developing high-quality, \textbf{well-grounded benchmark datasets} for robust evaluation of language models, with particular emphases on participatory, community-engaged methods and on rigorous measurement of fairness and social bias.}
 
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Southern California}{Los Angeles, CA}
-      {Ph.D. in Computer Science}{Aug. 2020 -- Present}
-      \resumeItemListStart
-        \resumeItem{Expected May 2027; GPA: 3.90/4.00; Supported by \textbf{NSF Graduate Research Fellowship}}
-      \resumeItem{Coursework: Advanced Natural Language Processing, Fairness in AI, Probability and Statistics for Data Science, Representation Learning in NLP, Advanced Algorithms, Crafting a Research Agenda in Computer Science}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {University of Oklahoma}{Norman, OK}
-      {B.S. in Computer Science \textit{(summa cum laude)}, B.A. in Letters \textit{(summa cum laude)}}{Aug. 2016 -- May 2020}
-      \resumeItemListStart
-        \resumeItem{Minor: Mathematics; GPA: 4.00/4.00} 
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
-\section{Research Interests}
-\small{Research agenda focuses on developing high-quality, \textbf{well-grounded benchmark datasets} for robust evaluation of language models, with particular emphases on participatory, community-engaged methods and on rigorous measurement of fairness and social bias.}
 
 \section{Publications}
 \begin{refsection}[my_pubs_formatted.bib]
@@ -152,51 +135,43 @@
 \printbibliography[heading=none]
 \end{refsection}
 
-\section{Technical Skills}
- \resumeSubHeadingListStart
-   \resumeItemWithHeader{Programming Languages and Skills}{Python, C, C++, R, SQL, Bash Scripting, HPC, Slurm}
-   \resumeItemWithHeader{ML/NLP/Data Science Tools}{HuggingFace, PyTorch, TensorFlow, SpaCy, Pandas, Numpy, Scikit-Learn, NLTK}
- \resumeSubHeadingListEnd
-
 \section{Research Experience}
 \resumeSubHeadingListStart
      \resumeSubheading
-      {Group 52 (AI Technology and Systems), MIT Lincoln Laboratory}{Boston, MA}
-      {Summer Research Program Intern}{May 2026 -- Present}
+      {MIT Lincoln Laboratory}{Boston, MA}
+      {Summer Research Program Intern}{May 2026 -- present}
       \resumeItemListStart
-      \resumeItem{Evaluate impact of relation extraction (RE) performance on downstream knowledge graph (KG) usefulness.}
+      \resumeItem{Led a study of demographic performance disparities in LLM-based relation extraction; independently defined the fairness framework, demographic taxonomy, and evaluation design.}
+      \resumeItem{Constructed a demographic annotation layer over 1,700 unique KnowledgeNet/Wikidata entities.}
+      \resumeItem{Ran large-scale, multi-node evaluations across 8 models (up to 400B parameters) and 16 prompt conditions.}
+      \resumeItem{Applied two-proportion z-tests, chi-square tests, and Fisher's exact tests to detect performance disparities; identified statistically significant effects across gender and geographic axes.}
+      \resumeItem{Delivered 2 technical presentations to internal team and government sponsor; both received strong commendation.}
+      \resumeItem{Continuing as part-time Student Technical Assistant after end of internship to extend analysis to larger FewRel dataset; targeting submission to a top NLP venue via ARR (January 2027 deadline).}
       \resumeItemListEnd
     \resumeSubheading
-      {LLM Fairness and Bias, USC Information Sciences Institute}{Los Angeles, CA}
-      {Graduate Research Assistant}{Jan. 2022 -- Present}
+      {USC Information Sciences Institute}{Los Angeles, CA}
+      {Graduate Research Assistant -- LLM Fairness and Bias}{Jan. 2022 -- Present}
       \resumeItemListStart
       \resumeItem{Develop two community-sourced benchmark datasets for detecting anti-LGBTQ+ and antisemitic bias in LLMs.}
       \resumeItem{Design and distribute two community surveys and analyze 500 responses to inform LLM bias benchmarks.}
       \resumeItem{Lead team of 3 to collect 8M sentences of community data, then train 32 debiased models via continued pretraining.}
       \resumeItem{Assess LLM capability to assist in fairness benchmark construction via detailed human analysis of model failures.}
       \resumeItem{Analyze viability of natural language inference (NLI) as an LLM bias metric, developing a novel NLI bias dataset.}
+      \resumeItemWithHeader{Work in Progress}{Assess demographic fairness in realistic résumé evaluation task.}
       \resumeItemWithHeader{Publications}{Lead interdisciplinary teams to publish four papers (two ACL, one workshop, one under review).}
       \resumeItemWithHeader{Mentoring}{Mentored undergraduate student on NLI bias metric project, Jan. -- Oct. 2025. Currently mentoring masters' student on project relating to LM sycophancy caused by emotional language in prompts.}
-      \resumeItemWithHeader{Advisor/PI}{Jonathan May}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {DARPA ReMATH, USC Information Sciences Institute}{Los Angeles, CA}
-      {Graduate Research Assistant}{Jan. 2021 -- Jun. 2022}
+    \resumeSubheadingSecondTitle{Graduate Research Assistant -- DARPA ReMATH}{Jan. 2021 -- Jun. 2022}
       \resumeItemListStart
       \resumeItem{Trained neural machine translation (NMT) models for extraction of symbolic math from bit-vector expressions.}
       \resumeItem{Developed novel metrics for evaluation of NMT-generated mathematical expressions.}
       \resumeItemWithHeader{Publication}{Wrote relevant sections of workshop paper accepted to CheckMATE, ACM CCS 2021.}
-      \resumeItemWithHeader{PI}{Luis Garcia}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Border Translation Project, USC Information Sciences Institute}{Los Angeles, CA}
-      {Graduate Research Assistant}{Aug. 2020 -- Dec. 2021}
+\newpage
+    \resumeSubheadingSecondTitle{Graduate Research Assistant -- Border Translation}{Aug. 2020 -- Dec. 2021}
       \resumeItemListStart
       \resumeItem{Built and evaluated NMT systems for extremely low-resource languages.}
       \resumeItem{Developed baseline NMT system for K'iche', a Mayan indigenous language, with intended application of helping NGOs provide legal assistance to immigrants and asylum seekers.}
-      \resumeItemWithHeader{Advisor/PI}{Jonathan May}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -207,7 +182,6 @@
       \resumeItem{Tested several embedding and clustering methods to extract natural language features from supercomputer syslog.}
       \resumeItem{Found these natural language features can be used to improve HPC node failure detection and prediction.}
       \resumeItemWithHeader{Publication}{Authored workshop paper accepted to Second Workshop on Machine Learning for Computing Systems, Supercomputing 2020.}
-      \resumeItemWithHeader{Mentor}{Elisabeth (Lissa) Moore}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -218,58 +192,59 @@
       \resumeItem{Designed scripts to automate XML encoding of Latin prose and poetry, reducing time to encode by a factor of 400.}
       \resumeItem{Only undergraduate student accepted to National Endowment for the Humanities Institute on Advanced Topics in Digital Humanities for Summer 2018 at Tufts University.}
       \resumeItemWithHeader{Presentations}{Conference talks at Society for Classical Studies 2019, Classical Association of the Middle West and South 2018, National Conference on Undergraduate Research 2018}
-      \resumeItemWithHeader{Mentor}{Samuel Huskey}
       \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-\section{Teaching Experience}
-\resumeSubHeadingListStart
-     \resumeSubheading
-      {DSCI 510 Principles of Programming for Data Science, University of Southern California}{Los Angeles, CA}
-      {Teaching Assistant}{Jan. 2026 -- May 2026}
-      \resumeItemListStart
-      \resumeItem{Prepared and led weekly lab sessions on beginner Python, git, shell, and data science topics.}
-      \resumeItem{Graded 14 weekly programming assignments and one midterm exam for 40 students.}
-      \resumeItem{Hosted weekly office hours and answer student questions on Slack.}
-      \resumeItemWithHeader{Student Feedback:}{80\% ``excellent'' overall TA rating.}
-      \resumeItemWithHeader{Professor}{Alexey Tregubov}
-      \resumeItemListEnd
-    \resumeSubheading
-      {CSCI 662 Advanced Natural Language Processing, University of Southern California}{Los Angeles, CA}
-      {Teaching Assistant}{Aug. 2025 -- Dec. 2025}
-      \resumeItemListStart
-      \resumeItem{Substantially updated all homework assignments to better cover finetuning, attention, transformers, and RAG.}
-      \resumeItem{Migrated automated grading for all programming assignments from Vocareum to Gradescope.}
-      \resumeItem{Configured all GradeScope assignments and rubrics.}
-      \resumeItem{Graded assignments, including programming homework, research reports, and in-class presentations.}
-      \resumeItem{Managed course logistics for about 30 students, including webpage, Slack channel, and Brightspace LMS.}
-      \resumeItem{Hosted weekly office hours and answer student questions on Slack.}
-      \resumeItemWithHeader{Student Feedback:}{85\% ``excellent'' overall TA rating.}
-      \resumeItemWithHeader{Professor}{Jonathan May}
-      \resumeItemListEnd
-
-      \resumeSubheading
-      {CSCI 350 Introduction to Operating Systems, University of Southern California}{Los Angeles, CA}
-      {Teaching Assistant}{May 2025 -- Aug. 2025}
-      \resumeItemListStart
-      \resumeItem{Graded C programming assignments in XV6 teaching operating system.}
-      \resumeItem{Hosted weekly office hours and answered student questions on Piazza.}
-      \resumeItemWithHeader{Professor}{Bill Cheng}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-
-\section{Work Experience}
-\resumeSubHeadingListStart
     \resumeSubheading
       {Epic Systems Corporation}{Madison, WI}
       {Software Developer Intern}{May 2019 -- Aug. 2019}
       \resumeItemListStart
-      \resumeItem{Prototyped a menstrual cycle tracking feature within MyChart for iOS to allow patients to share cycle data with providers.}
+      \resumeItem{Prototyped a menstrual cycle tracking feature for iOS MyChart to allow patients to share data with providers.}
       \resumeItem{Designed and implemented server and client-side data structures to save cycle data to patient's medical record.}
       \resumeItem{Built four complete and interactive user-interface screens and partial prototypes of several others.}
       \resumeItem{Conducted user research, including about 100 internal survey responses and 5 user interviews.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Ph.D. in Computer Science}{Aug. 2020 -- Present}
+      \resumeItemListStart
+        \resumeItem{Expected Apr. 2027; GPA: 3.90/4.00; Supported by \textbf{NSF Graduate Research Fellowship}}
+      \resumeItem{Coursework: Advanced Natural Language Processing, Fairness in AI, Probability and Statistics for Data Science, Representation Learning in NLP, Advanced Algorithms, Crafting a Research Agenda in Computer Science}
+      \resumeItem{Advised by Jonathan May}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Oklahoma}{Norman, OK}
+      {B.S. in Computer Science \textit{(summa cum laude)}, B.A. in Letters \textit{(summa cum laude)}}{Aug. 2016 -- May 2020}
+      \resumeItemListStart
+        \resumeItem{Minor: Mathematics; GPA: 4.00/4.00} 
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \section{Technical Skills}
+ \resumeSubHeadingListStart
+   \resumeItemWithHeader{Programming Languages and Skills}{Python, C, C++, R, SQL, Bash Scripting, HPC, Slurm}
+   \resumeItemWithHeader{ML/NLP/Data Science Tools}{HuggingFace, PyTorch, TensorFlow, SpaCy, Pandas, Numpy, Scikit-Learn, MatPlotLib}
+ \resumeSubHeadingListEnd
+  
+\section{Teaching Experience}
+\resumeSubHeadingListStart
+     \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Teaching Assistant -- DSCI 510 Principles of Programming for Data Science}{Jan. 2026 -- May 2026}
+      \resumeItemListStart
+      \resumeItem{Prepared and led weekly lab sessions on beginner Python, git, shell, and data science topics.}
+      \resumeItem{Graded 14 weekly programming assignments and one midterm exam for 40 students.}
+      \resumeItemWithHeader{Student Feedback}{80\% ``excellent'' overall TA rating.}
+      \resumeItemListEnd
+    \resumeSubheadingSecondTitle{Teaching Assistant -- CSCI 662 Advanced Natural Language Processing}{Aug. 2025 -- Dec. 2025}
+      \resumeItemListStart
+      \resumeItem{Updated homework assignments to better cover finetuning, attention, transformers, and RAG.}
+      \resumeItem{Migrated automated grading to Gradescope and configured all assignments and rubrics.}
+      \resumeItem{Graded assignments, including programming homework, research reports, and in-class presentations.}
+      \resumeItem{Managed course logistics for about 30 students, including webpage, Slack channel, and Brightspace LMS.}
+      \resumeItemWithHeader{Student Feedback}{85\% ``excellent'' overall TA rating.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -287,12 +262,13 @@
       \resumeItemListEnd
     \resumeSubheadingNoTitle{Conference Talks and Posters}
       \resumeItemListStart
+      \resumeItem{Lightning Talk, ACM AI Leadership Summit  Doctoral Consortium (selective; fully funded). \hfill \textit{Aug. 2026}}
       \resumeItem{Lightning Talk, \textit{Participatory Methods for LLM Bias Benchmarks}, Responsible Data Workshop. \hfill \textit{Sep. 2025}}
-      \resumeItem{Poster Presentation, \textit{Textual Entailment as a Bias Evaluation Metric for LLMs}, USC ShowCAIS. \hfill \textit{Apr. 2025}}
-      \resumeItem{Poster Presentation, \textit{GPT is Not an Annotator}, Southern California NLP Symposium. \hfill \textit{Nov. 2024}}
+      \resumeItem{Poster, \textit{Textual Entailment as a Bias Evaluation Metric for LLMs}, USC ShowCAIS. \hfill \textit{Apr. 2025}}
+      \resumeItem{Poster, \textit{GPT is Not an Annotator}, Southern California NLP Symposium. \hfill \textit{Nov. 2024}}
       \resumeItem{Roundtable Discussion, \textit{Defining and Disrupting Antisemitism}, Association for Jewish Studies. \hfill \textit{Dec. 2023}}
-      \resumeItem{Poster Presentation, \textit{Anti-Queer Bias in LLMs}, CRA-WP Grad Cohort for Women. \hfill \textit{Apr. 2023}}
-      \resumeItem{Poster Presentation, \textit{Anti-Queer Bias in LLMs}, Southern California NLP Symposium. \hfill \textit{Nov. 2022}}
+      \resumeItem{Poster, \textit{Anti-Queer Bias in LLMs}, CRA-WP Grad Cohort for Women (selective; fully funded). \hfill \textit{Apr. 2023}}
+      \resumeItem{Poster, \textit{Anti-Queer Bias in LLMs}, Southern California NLP Symposium. \hfill \textit{Nov. 2022}}
       \resumeItem{\textit{Automatically Encoding Digital Editions of Latin Texts}, Society for Classical Studies. \hfill \textit{Jan. 2019}}
       \resumeItem{\textit{Coding And/As Classical Scholarship}, Classical Association of the Midwest and South. \hfill \textit{Apr. 2018}}
       \resumeItem{\textit{Coding And/As Classical Scholarship}, National Conference on Undergraduate Research. \hfill \textit{Apr. 2018}}
